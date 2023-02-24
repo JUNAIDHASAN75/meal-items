@@ -71,9 +71,9 @@ const displayMealsDetails = meal =>{
     document.getElementById('mealdetailsLabel').innerText = meal.strMeal;
     const mealDeatils =  document.getElementById('discription');
     mealDeatils.innerHTML = `
-    <img class="img-fluid" src="${meal.strMealThumb}">
+    <img class="img-fluid mb-3" src="${meal.strMealThumb}">
     <a class="text-decoration-none" target='_blank' href="${meal.strYoutube}" >${meal.strYoutube}</a>
-    <p>${meal.strInstructions}</p>
+    <p class=" mt-3">${meal.strInstructions}</p>
     
     `
 }
