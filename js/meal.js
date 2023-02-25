@@ -19,7 +19,7 @@ const displayMealData=meals=>{
             " class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">${meal.strMeal}</h5>
-                <p class="card-text">This is a short card.</p>
+                
                 <button onclick="loadMealDetail2(${meal.idMeal})" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mealdetails">
                     Details
                     </button>
@@ -72,6 +72,7 @@ const displayMealsDetails = meal =>{
     const mealDeatils =  document.getElementById('discription');
     mealDeatils.innerHTML = `
     <img class="img-fluid mb-3" src="${meal.strMealThumb}">
+    
     <a class="text-decoration-none" target='_blank' href="${meal.strYoutube}" >${meal.strYoutube}</a>
     <p class=" mt-3">${meal.strInstructions}</p>
     
